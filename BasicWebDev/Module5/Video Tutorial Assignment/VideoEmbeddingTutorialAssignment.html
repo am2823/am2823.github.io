@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+ <h1 style="text-align:center; text-decoration:underline;">Video Embedding Tutorial Assignment</h1>
+ <title>Video  Embedding Tutorial Assignment</title>
+<hr/>
+ <link rel="Stylesheet" type="text/css" href="VideoStyleSheet.css"/>
+</head>
+
+<body>
+<section>
+  <div class="text">
+  <h2>Steps to embed a video on  a website are:</h2>
+   <p>1. Save video in the project directory file.</p>
+  </div>
+  <div class="image">
+   <img src="Images/Screenshot1.png" alt="Save"/>
+  </div>
+  <div class="text">
+   <p>2. Open &lt;video&gt; tag in html document to establish video player. Assign height and width measurements for display size. Ensure that it does not exceed the height and width measurements of the original video file.</p>
+  </div>
+  <div class="image"> 
+   <img src="Images/Screenshot2.png" alt="displaysize"/>
+  </div>
+  <div class="text">
+   <p>3. Apply <span>controls attribute</span> to &lt;video&gt; tag to display video controls such as volume control,time,etc. Set <span>preload attribute </span> to auto. This will ensure the video is fully or partially loaded by the browser before use.
+  </div>
+  <div class="image">
+   <img src="Images/Screenshot3.png" alt="boolean"/>
+  </div>
+  <div class="text">
+   <p>4. Open a &lt;source&gt;tag nested within the &lt;video&gt; tag. Set file location in the <span>src attribute</span>. Set the media type of the file in the  <span>type attribute</span>. 
+  </div>
+  <div class="image">
+   <img src="Images/Screenshot4.png" alt="sourcefile"/>
+  </div>
+  <div class="text">
+   <p>5. Add other filetypes of the same video in additional &lt;source&gt; tags. Adding more filetypes of the same video increases chances for finding a compatible video source.
+  </div>
+  <div class="image">
+   <img src="Images/Screenshot5.png" alt="altfile"/>
+  </div>
+  <div class="text">
+  <p>6. Add a default text stating that the browser does not support the video. This text will be displayed in case none of the video files are supported by the browser.
+  </div>
+  <div class="image">
+   <img src="Images/Screenshot6.png" alt="defaulttext"/>
+  </div>
+
+  <div class="vid">
+   <p> Cherry Blossom Video     </p>
+   <video width="500px" height="500px" controls preload="auto">
+     <source src="Video/blossom.mp4"video/mpeg"/>
+     <source src="Video/blossom.mp4"video/webm"/>
+     This browser does not support this video.
+    </video>
+   </div>
+ </section>
+ </body>
