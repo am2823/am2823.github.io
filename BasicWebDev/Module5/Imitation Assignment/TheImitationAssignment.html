@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <h1 style="text-align:center;text-decoration:underline;">  Imitation Assignment</h1>
+  <hr/>
+  <title>ImitationAssignment</title>
+  <style>
+  section.filtered{
+          display:grid;
+          grid-template-columns:460px 620px 600px;
+          grid-template-rows:600px 400px;
+          width:1680px;
+          height:1000px;
+         }
+   
+    
+     div.butterfly img{
+      filter:invert(80%) grayscale(15%) hue-rotate(5deg) brightness(140%);
+      -webkit-filter:invert(80%) grayscale(15%) hue-rotate(5deg) brightness(140%);
+     border-radius:100px 0px;
+     }
+      div.penguin img{
+        
+        border:solid 1px black;
+        border-radius:450px/300px;
+        filter:sepia(50%);
+        -webkit-filter:sepia(50%);
+       }
+      div.seagull{
+         box-shadow:1px 10px 10px rgb(173,173,173);
+         width:560px;
+         height:396px;
+          }
+      div.seagull img{
+        background-image:linear-gradient(to bottom right,rgb(146,146,255),white);
+        background-size:600px,420px;
+         }
+      div.dinosaur img{
+         filter: hue-rotate(100deg) drop-shadow(10px 2px 3px black);
+         -webkit-filter: hue-rotate(100deg) drop-shadow(10px 2px 3px black);
+          }
+      div.theaterstage{
+        position:relative;
+        width:400px;
+        height:350px;
+         }
+         div.image{
+           border:solid 1px white;
+           background-image:url(Images/theater_stage.jpg);
+           background-repeat:no-repeat;
+           filter:blur(3px);
+          -webkit-filter:blur(3px);
+           }
+           
+         div.text{
+         position:absolute;
+         left:80px;
+         top:110px;
+         width:400px;
+         height:350px;
+         }
+        
+        div.text p{
+        text-align center;
+        vertical-align:center;
+        color:white;
+        font-family:Arial;
+        font-weight:100;
+        font-size:50px;
+        text-shadow:5px 5px 3px black;
+        }
+       div.footballfield img{
+        filter:grayscale(100%);
+        -webkit-filter:grayscale(100%);
+        border:48px solid white;
+        border-image:url(Images/tic-tac-toe.png) 48 round;
+        } 
+        p{
+        font-size:20px;
+        font-style:italic;
+        font-family:Helvetica;
+   </style>
+</head>
+
+<body>
+<section class="filtered">
+<div class="penguin">
+ <img src="Images/penguins.jpg" alt="penguins"/>
+ <p style="text-align:center;">Penguins</p>
+  </div>
+<div class="seagull">
+    <img src="Images/seagull.png" alt="seagull"/>
+     <p style="text-align:center;">Seagull</p>
+   </div>
+<div class="dinosaur" >
+    <img src="Images/dinosaur.png" alt="dinosaur"/>
+    <p style="text-align:center">Dinosaur</p>
+ </div>
+ <div class="butterfly" style="margin:auto; padding:20px;">
+  <img src="Images/butterfly.jpg" alt="butterfly"/>
+   <p style="text-align:center;">Butterfly</p>
+  </div>
+<div class="footballfield" >
+     <img src="Images/football_field.jpg" alt="footballfield"/>
+     <p style="text-align:center;">Football Field with Tic-Tac-Toe Border </p>
+   </div>
+
+    <div class="theaterstage">
+      <div class="image">
+       <img src="Images/theater_stage.jpg" alt"stage"/>
+      </div>
+      <div class="text">
+       <p> Presenting</p>
+     </div>
+     <p style="text-align:center; vertical-align:top;">Theater stage</p>
+    </div>
+  
+   
+
+</section>
+</body>
+
+</html>
