@@ -1,0 +1,119 @@
+/*General*/
+
+@font-face {
+  src: url(../fonts/DancingScript-Bold.ttf);
+  font-family:DancingScript-Bold;
+}
+
+section.contact_page{
+               width:900px;
+               padding:10px;
+               margin:auto;
+               background-image:linear-gradient(180deg,#ba55d3,#9932cc);
+               border:solid 2px #9932cc;
+               display:grid;
+               grid-template-columns:500px 500px;
+               grid-template-areas:
+                         'fr cn'
+                         'cm cm'
+                          ;
+               }
+               
+           
+
+section.fromcwn{
+            grid-area:fr;
+            width:450px;
+            height:350px;
+            position:relative;
+            border:solid 2px #633c94;
+            margin-bottom:20px;
+            background-image:linear-gradient(-180deg,#ffe4e1,#ffb6c1);
+            }  
+div.imgcontact{
+             width:200px;
+             height:320px;
+             float:left;
+             padding-left:5px;
+             padding-top:5px;
+              }
+div.thankyou{
+             width:200px;
+             height:300px;
+             padding-right:10px;
+             float:right;
+             text-align:center;
+             font-family:DancingScript-Bold,Baskerville,serif;
+             font-size:20px;
+             }   
+
+
+/*contact*/
+section.contact{
+            grid-area:cn;
+            width:400px;
+            border:solid 2px #633C94;
+            text-align:center;
+            margin-bottom:20px;
+            font-family:Baskerville,Verdana,serif;
+            font-size:18px;
+            background-color:white;
+            }
+
+section.contact h3{
+              font-family:Baskerville,Verdana,serif;
+              font-size:20px;
+              text-decoration:underline;
+              color: #633C94;
+              }
+div.contact_title h2{
+              font-family:DancingScript-Bold,Baskerville,Verdana,serif;
+              font-size:26px;
+              text-decoration:underline;
+              color: #633C94;
+              font-style:bold;
+              }
+
+/*comment*/
+section.comment{
+              grid-area:cm;
+              clear:both;
+              width:800px;
+              border:solid 2px #633C94;
+              margin-below:10px;
+              padding:10px;
+              background-color:white;
+              }
+
+
+  section.comment h2{  
+                 font-family:DancingScript-Bold;
+                 font-size:26px;
+                 text-decoration:underline;
+                 color: #633C94;
+                 font-style:bold;
+                 }
+  section.comment p{
+                   color: #633C94;
+                   font-style:bold;
+                   font-size:18px;
+                   }
+
+                    
+
+div.user{
+       position:relative;
+        }
+div.tel{
+        width:200px; 
+        float:right;
+        margin-bottom:10px;
+        padding-right:40px;
+}
+div.name{
+        width:200px; 
+        float:left;
+        margin-bottom:10px;
+}
+
+    
